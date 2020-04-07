@@ -1,0 +1,72 @@
+
+/* 从左淡入动画 */
+@keyframes lefteaseinAnimate{
+    0%{ transform: translateX(-2000px);}   /*在0%时设置文字在想X轴-2000px位移处（左边），透明度为0，也就是看不见文字*/
+    50%{ transform: translateX(200px);}
+    100%{ transform: translateX(0px);}         /*在100%时设置文字在想X轴0px位移处，也就是原始布局的位置，透明度为1，也就是文字可以看见了*/
+}
+/* @-webkit-keyframes lefteaseinAnimate{
+    0%{ transform: translateX(2000px);}
+    80%{ transform: translateX(-200px);}
+    100%{ transform: translateX(0px);}  
+}
+@-o-keyframes lefteaseinAnimate{
+    0%{ transform: translateX(2000px);}
+    80%{ transform: translateX(-200px);}
+    100%{ transform: translateX(0px);}  
+}
+@-ms-keyframes lefteaseinAnimate{
+    0%{ transform: translateX(2000px);}
+    80%{ transform: translateX(-200px);}
+    100%{ transform: translateX(0px);}  
+}
+@-moz-keyframes lefteaseinAnimate{
+    0%{ transform: translateX(2000px);}
+    80%{ transform: translateX(-200px);}
+    100%{ transform: translateX(0px);}     
+} */
+
+.lefteasein {
+    animation: lefteaseinAnimate 1s ease 1;
+}
+
+/* 从右边淡入动画 */
+@keyframes righteaseinAnimate{
+    0%{ transform: translateX(2000px);}   /*在0%时设置文字在想X轴-2000px位移处（左边），透明度为0，也就是看不见文字*/
+    50%{ transform: translateX(-200px);}
+    100%{ transform: translateX(0px);}         /*在100%时设置文字在想X轴0px位移处，也就是原始布局的位置，透明度为1，也就是文字可以看见了*/
+}
+
+.righteasein {
+    animation: righteaseinAnimate 1s ease 1;
+}
+
+@keyframes topeaseinAnimate{
+    0%{ transform: translateY(-2000px);}   /*在0%时设置文字在想X轴-2000px位移处（左边），透明度为0，也就是看不见文字*/
+    50%{ transform: translateY(200px);}
+    100%{ transform: translateY(0px);}         /*在100%时设置文字在想X轴0px位移处，也就是原始布局的位置，透明度为1，也就是文字可以看见了*/
+}
+
+.topeasein {
+    animation: topeaseinAnimate 1s ease 1;
+}
+
+@keyframes bottomeaseinAnimate{
+    0%{ transform: translateY(2000px);}   /*在0%时设置文字在想X轴-2000px位移处（左边），透明度为0，也就是看不见文字*/
+    50%{ transform: translateY(-200px);}
+    100%{ transform: translateY(0px);}         /*在100%时设置文字在想X轴0px位移处，也就是原始布局的位置，透明度为1，也就是文字可以看见了*/
+}
+
+.bottomeasein {
+    animation: bottomeaseinAnimate 1s ease 1;
+}
+
+@keyframes easein {
+    0%{ opacity: 0;}
+    50%{ opacity: 0;}
+    100%{ opacity: 1;} 
+}
+
+.easein {
+    animation: easein 1s ease 1;
+}
